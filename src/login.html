@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/src/css/output.css" />
+    <link rel="stylesheet" href="/src/css/login.css" />
+  </head>
+  <body
+    class="min-w-[100vw] min-h-[100vh] overflow-hidden relative flex justify-center items-center"
+  >
+    <div
+      style="opacity: 0.5"
+      id="image"
+      class="absolute top-0 left-0 min-w-[100vw] min-h-[100vh]"
+    >
+      <img
+        style="width: 100%; height: 100%"
+        src="/src/images/login_background-page.avif"
+      />
+    </div>
+    <div
+      id="container"
+      class="glassmorphism mx-auto shadow-2xl shadow-gray-400 sm:flex sm:justify-around sm:items-center w-[80%] sm:h-[500px]"
+    >
+      <div id="img-content" class="">
+        <img
+          src="/src/images/login_background-page.avif"
+          class="rounded-2xl sm:h-[450px]"
+        />
+      </div>
+      <div id="login-content" class="bg-transparent mx-4">
+        <div id="login-header" class="text-center">
+          <p class="font-bold text-3xl text-blue-950 mt-6">Create an account</p>
+          <p class="mb-10">
+            Already have an acoount?
+            <a href="" class="underline text-blue-600 hover:text-red-600"
+              >login</a
+            >
+          </p>
+        </div>
+        <form id="form-register">
+          <input type="text" placeholder="First name" required />
+          <input type="text" placeholder="Last name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Enter your password" required />
+          <div
+            id="check-box"
+            class="flex justify-center items-center text-[14px]"
+          >
+            <input type="checkbox" id="check" class="w-fit mr-3" required />
+            <label for="check"
+              >I agree to the
+              <a href="#" class="underline text-blue-600 hover:text-red-600"
+                >Terms&Conditions</a
+              ></label
+            >
+          </div>
+          <input
+            type="submit"
+            value="Create account"
+            class="mt-6 cursor-pointer"
+          />
+        </form>
+      </div>
+    </div>
+    <script src="/src/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.glassmorphism {
+  background: rgba(7, 6, 80, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  color: white;
+}
+form > input {
+  margin-bottom: 12px;
+  width: 100%;
+  padding-left: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+  border-radius: 4px;
+  background-color: gray;
+}
+@media (min-width: 992px) {
+  form {
+    text-align: center;
+  }
+  #check-box {
+    text-align: center;
+  }
+  form > input {
+    width: 80%;
+  }
+}
+form input:focus {
+  outline: 2px solid rgb(29, 5, 73);
+}
+input[type="submit"] {
+  background-color: rgb(29, 5, 73);
+  transition: 0.2s;
+}
+input[type="submit"]:hover {
+  background-color: rgb(61, 26, 128);
+}
