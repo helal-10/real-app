@@ -47,11 +47,11 @@ body {
   }
 }
 #about.disappeared {
-  transform: translateY(50px);
+  transform: translateY(100px);
   opacity: 0;
 }
 #contact.disappeared {
-  transform: translateY(50px);
+  transform: translateY(100px);
   opacity: 0;
 }
 #burger-menu.active + #ul-hero a li,
